@@ -1,0 +1,89 @@
+#cover {
+	height: 200px;
+	background: center /cover no-repeat url(../img/cover.jpg);
+}
+
+#profile {
+	width: 60%;
+	position: relative;
+	top: -80px;
+	margin-bottom: -80px;
+	border: 4px solid white;
+}
+
+.icons i {
+  padding: 10px;
+  text-shadow: 0px 6px 8px rgba(0, 0, 0, 0.7);
+  transition: all ease-in-out 100ms;
+}
+
+.icons i:hover {
+  margin-top: -2px;
+  text-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+#bio {
+	padding: 0 20px;
+}
+
+@media screen and (max-width: 450px) {
+	#bio{
+		text-align: center;
+	}
+	#cover {
+		height:150px;
+	}
+}
+
+.row {
+	margin-bottom: 0;
+}
+
+.skill {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 10px;
+
+}
+
+.bar {
+	background-color: #d24;
+	width: 10%;
+	border-radius: 3px;
+}
+
+span{
+	color: #fff;
+	font-weight: bold;
+}
+
+i.left {
+	margin: 10px 3px;
+}
+
+#head {
+	margin: 0px 0px 0px 130px;
+	font-size: 1.5em;
+}
+
+.detail-group {
+	margin-bottom: 10px;
+}
+
+.detail-group p:nth-child(even) {
+	padding-left: 10px;
+}
+
+.card .card-content {
+	padding: 15px;
+}
+
+.image {
+	height:200px;
+
+}
+
+footer p {
+	margin: 0;
+}
