@@ -2,6 +2,8 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Link from "next/link";
+import { BiLogoGmail } from "react-icons/bi";
+import { FaLinkedin, FaVimeoV } from "react-icons/fa";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -28,6 +30,28 @@ export default function RootLayout({
           </nav>
         </header>
         {children}
+        <footer className="flex justify-center m-6 flex-col items-center">
+          <div className="flex flex-row">
+            <div className="mx-4">
+              <a target="_blank" href="">
+                <FaVimeoV size={32} />
+              </a>
+            </div>
+            <div className="mx-4">
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/soumalina-majumdar-5a1621155/"
+              >
+                <FaLinkedin size={32} />
+              </a>
+            </div>
+            <div className="mx-4">
+              <a target="_blank" href="mailto:sourjit.paul61@gmail.com">
+                <BiLogoGmail size={32} />
+              </a>
+            </div>
+          </div>
+        </footer>
       </body>
     </html>
   );
