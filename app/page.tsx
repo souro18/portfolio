@@ -13,7 +13,9 @@ export default function Home() {
           </div>
           <Image src="./next.svg" alt="illustration" width={100} height="100" />
         </div>
+  
       </div>
+      <div className='h-48 bg-white'>random section</div>
     </main>
   )
 }
