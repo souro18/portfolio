@@ -6,7 +6,10 @@ export default function Home() {
   return (
     <main>
       <div className="flex min-h-screen flex-col items-center justify-center mx-auto max-w-5xl overflow-x-hidden">
-        <div className="flex w-full h-[100%] justify-between items-center">
+        <div
+          className="flex w-full min-h-screen justify-between items-center "
+          // style={{ backgroundImage: "url(/Illustration.png)" }}
+        >
           <div>
             <h1 className="text-4xl mb-2 ">Soumalina Majumdar</h1>
             <h4 className="text-lg">Concept art | Animation | Illustration</h4>
@@ -15,7 +18,8 @@ export default function Home() {
           <Image
             src="/Illustration.png"
             alt="illustration"
-            width={800}
+            width={700}
+            style={{ objectFit: "contain" }}
             height={500}
           />
         </div>

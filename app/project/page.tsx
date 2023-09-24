@@ -1,4 +1,4 @@
-import ParallaxContainer from "../component/ParallaxContainer";
+import ParallaxContainer from "../../component/ParallaxContainer";
 
 export default function Home() {
   return (

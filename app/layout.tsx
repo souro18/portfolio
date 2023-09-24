@@ -4,6 +4,7 @@ import { Inter } from "next/font/google";
 import Link from "next/link";
 import { BiLogoGmail } from "react-icons/bi";
 import { FaLinkedin, FaVimeoV } from "react-icons/fa";
+import Header from "../component/Header";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,14 +22,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <header className="fixed flex w-full justify-between items-center px-4 md:px-20 h-20  z-10">
+        {/* <header className="fixed flex w-full justify-between items-center px-4 md:px-20 h-20  z-10">
           <h3 className="text-lg bold">
             <Link href={"/"}>Porfolio</Link>
           </h3>
           <nav>
             <Link href={"/project"}>projects</Link>
           </nav>
-        </header>
+        </header> */}
+        <Header />
         {children}
         <footer className="flex justify-center m-6 flex-col items-center">
           <div className="flex flex-row">
