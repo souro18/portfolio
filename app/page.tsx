@@ -3,6 +3,8 @@ import Image from "next/image";
 // https://www.inbalochyon.com/
 
 export default function Home() {
+  const v = process.env.RESEND_API_KEY;
+  console.log(process.env.RESEND_API_KEY);
   return (
     <main>
       <div className="flex min-h-screen flex-col items-center justify-center mx-auto max-w-5xl overflow-x-hidden">
@@ -11,7 +13,7 @@ export default function Home() {
           // style={{ backgroundImage: "url(/Illustration.png)" }}
         >
           <div>
-            <h1 className="text-4xl mb-2 ">Soumalina Majumdar</h1>
+            <h1 className="text-4xl mb-2 ">Soumalina Majumdar {v}</h1>
             <h4 className="text-lg">Concept art | Animation | Illustration</h4>
           </div>
           {/* 1680 / 1050 */}
